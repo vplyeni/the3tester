@@ -24,8 +24,8 @@ for i in range(len(answers)):
         grade += 1
     else:
         wrongs.append([i, i//20, answers[i], tested_answers[i]])
-print(f"Grade: {grade}/600")
 if wrongs:
     print("INDEX, IMAGE INDEX, TRUE ANSWER, YOUR ANSWER")
     for i in wrongs:
         print(i)
+print(f"Grade: {grade}/600")
